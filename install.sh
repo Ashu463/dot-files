@@ -13,6 +13,7 @@ stamp=$(date +%Y%m%d-%H%M%S)
   cp "home/$f" "$dest"
 done
 chmod 600 "$HOME/.ssh/config" 2>/dev/null || true
+[ -f gitignore-global ] && cp gitignore-global "$HOME/.gitignore"
 
 # Scripts → ~/.local/bin (symlinked, so edits in the repo apply immediately)
 mkdir -p "$HOME/.local/bin"

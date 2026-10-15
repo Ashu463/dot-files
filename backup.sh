@@ -6,7 +6,7 @@ cd "$(dirname "$0")"
 # Plain files: <path relative to $HOME>
 FILES=(
   .bashrc .zshrc .profile .zprofile
-  .gitconfig .gitignore
+  .gitconfig
   .ssh/config
   .config/monitors.xml
   .config/mimeapps.list
@@ -17,6 +17,7 @@ FILES=(
   .config/Cursor/User/keybindings.json
   .config/htop/htoprc
   .config/autostart/tv-scale.desktop
+  .local/share/applications/google-chrome.desktop
 )
 # Whole folders
 DIRS=(
@@ -36,6 +37,9 @@ for d in "${DIRS[@]}"; do
   mkdir -p "home/$d"
   rsync -a --delete --exclude .git "$HOME/$d/" "home/$d/"
 done
+
+# ~/.gitignore lives outside home/ so git does not obey it inside this repo
+cp "$HOME/.gitignore" gitignore-global
 
 # GNOME settings (theme, shortcuts, extensions, dock, terminal profiles)
 mkdir -p gnome
