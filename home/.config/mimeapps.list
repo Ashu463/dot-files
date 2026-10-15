@@ -1,0 +1,29 @@
+[Default Applications]
+text/html=com.google.Chrome.desktop
+x-scheme-handler/http=com.google.Chrome.desktop
+x-scheme-handler/https=com.google.Chrome.desktop
+x-scheme-handler/about=firefox_firefox.desktop
+x-scheme-handler/unknown=firefox_firefox.desktop
+x-scheme-handler/mailto=google-chrome.desktop
+x-scheme-handler/chrome=userapp-Firefox Developer Edition-EGWSQ2.desktop
+application/x-extension-htm=userapp-Firefox Developer Edition-EGWSQ2.desktop
+application/x-extension-html=userapp-Firefox Developer Edition-EGWSQ2.desktop
+application/x-extension-shtml=userapp-Firefox Developer Edition-EGWSQ2.desktop
+application/xhtml+xml=com.google.Chrome.desktop
+application/x-extension-xhtml=userapp-Firefox Developer Edition-EGWSQ2.desktop
+application/x-extension-xht=userapp-Firefox Developer Edition-EGWSQ2.desktop
+application/json=org.gnome.TextEditor.desktop
+x-scheme-handler/claude=com.anthropic.Claude.desktop
+x-scheme-handler/claude-cli=claude-code-url-handler.desktop
+x-scheme-handler/webcal=google-chrome.desktop
+
+[Added Associations]
+inode/directory=code_code.desktop;
+application/pdf=libreoffice-draw.desktop;google-chrome.desktop;
+x-scheme-handler/http=userapp-Firefox Developer Edition-EGWSQ2.desktop;com.google.Chrome.desktop;
+x-scheme-handler/https=userapp-Firefox Developer Edition-EGWSQ2.desktop;com.google.Chrome.desktop;
+text/html=userapp-Firefox Developer Edition-EGWSQ2.desktop;com.google.Chrome.desktop;
+application/json=org.gnome.TextEditor.desktop;
+x-scheme-handler/chrome=userapp-Firefox Developer Edition-EGWSQ2.desktop;
+application/octet-stream=appimagekit-joplin.desktop;
+application/xhtml+xml=com.google.Chrome.desktop;

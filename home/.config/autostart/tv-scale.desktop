@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=TV scale
+Comment=Shrink Panasonic TV output to ~67%
+Exec=sh -c 'exec "$HOME/.local/bin/tv-scale" --watch'
+X-GNOME-Autostart-enabled=true
+NoDisplay=true

@@ -1,0 +1,10 @@
+# Never commit secrets — these should not be in home/ anyway
+*id_rsa*
+*id_ed25519*
+.git-credentials
+.netrc
+.npmrc
+.pgpass
+.aws/
+.secrets/
+*.bak-*

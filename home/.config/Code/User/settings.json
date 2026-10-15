@@ -1,0 +1,79 @@
+{
+    "files.autoSave": "onFocusChange",
+    "editor.mouseWheelZoom": true,
+    "window.zoomLevel": 1,
+    "solargraph.externalServer": {
+
+        "host": "localhost",
+        "port": 3002
+    },
+    "eslint.enable": false,
+    "editor.formatOnSave": false,
+    "explorer.confirmDelete": false,
+    "editor.minimap.enabled": false,
+    "explorer.confirmDragAndDrop": false,
+    "git.autofetch": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "workbench.colorTheme": "Visual Studio Dark - C++",
+    "explorer.confirmPasteNative": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "editor.cursorStyle": "underline",
+    "githubPullRequests.pullBranch": "never",
+    "git.confirmSync": false,
+    "git.ignoreRebaseWarning": true,
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "cpp": false,
+        "json": true,
+        "python": true,
+        "javascript": true,
+        "typescript": false
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "docker.extension.enableComposeLanguageServer": false,
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[dockercompose]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        },
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "python.createEnvironment.trigger": "off",
+    "terminal.integrated.suggest.enabled": false,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "python.defaultInterpreterPath": "/bin/python3",
+    "github.copilot.nextEditSuggestions.enabled": false,
+    "claudeCode.preferredLocation": "panel",
+    "go.toolsManagement.autoUpdate": true,
+    "baml.bamlPanelOpen": false,
+    "yaml.disableSchemaDetection": [
+        "**/.github/workflows/*.yml",
+        "**/.github/workflows/*.yaml",
+        "**/.gitea/workflows/*.yml",
+        "**/.gitea/workflows/*.yaml",
+        "**/.forgejo/workflows/*.yml",
+        "**/.forgejo/workflows/*.yaml"
+    ],
+    "terminal.integrated.mouseWheelScrollSensitivity": 3,
+    "terminal.integrated.gpuAcceleration": "off"
+}

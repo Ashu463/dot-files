@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# Shrink everything on the Panasonic TV to ~67% (like BetterDisplay on macOS).
+# Xorg only — Wayland ignores xrandr scaling.
+#   tv-scale          apply once
+#   tv-scale --watch  keep re-applying after login / replug / GNOME resets
+#   tv-scale --off    back to 100%
+SCALE="${TV_SCALE:-1.5}"   # 1.5 ≈ 67%, 2 = 50%, 1.25 = 80%
+TV=HDMI-1
+LAPTOP=eDP-1
+
+apply() {
+  xrandr --output "$TV" --mode 1366x768 --scale "${SCALE}x${SCALE}" --right-of "$LAPTOP"
+}
+
+# TV connected but still at its native unscaled size?
+needs_scale() {
+  xrandr --current | grep -qE "^$TV connected( primary)? 1366x768\+"
+}
+
+[ "$XDG_SESSION_TYPE" = x11 ] || { echo "tv-scale: needs 'Ubuntu on Xorg' session" >&2; exit 1; }
+
+case "$1" in
+  --off)   xrandr --output "$TV" --scale 1x1 ;;
+  --watch) while sleep 3; do needs_scale && apply; done ;;
+  *)       apply ;;
+esac

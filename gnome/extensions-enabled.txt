@@ -1,0 +1,12 @@
+Vitals@CoreCoding.com
+stopwatch@aliakseiz.github.com
+user-theme@gnome-shell-extensions.gcampax.github.com
+apps-menu@gnome-shell-extensions.gcampax.github.com
+blur-my-shell@aunetx
+hidetopbar@mathieu.bidon.ca
+ubuntu-appindicators@ubuntu.com
+ubuntu-dock@ubuntu.com
+tiling-assistant@ubuntu.com
+screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com
+windowsNavigator@gnome-shell-extensions.gcampax.github.com
+workspace-indicator@gnome-shell-extensions.gcampax.github.com
